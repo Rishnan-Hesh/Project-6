@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:VitesseApp/VitesseApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Candidats">
+   </FileRef>
+   <FileRef
+      location = "group:CandidatDetails">
+   </FileRef>
+   <FileRef
+      location = "group:Register">
+   </FileRef>
+   <FileRef
+      location = "container:Authentication">
+   </FileRef>
+</Workspace>
