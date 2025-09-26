@@ -81,6 +81,7 @@ struct AuthenticationView: View {
                         Text("Sign in")
                             .font(.system(size: 20, weight: .bold))
                             .foregroundColor(.black)
+                        
                             .padding(.vertical, 15)
                             .padding(.horizontal, 80)
                             .cornerRadius(8)

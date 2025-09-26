@@ -17,7 +17,6 @@ les informations et connecter l'utilisateur.
 ● Le clic sur le bouton ‘Register’ doit rediriger l’utilisateur vers la vue de création de
 compte*/
 
-@available(iOS 15.0, *)
 struct RegisterView: View {
     
     @State private var firstName: String = ""
@@ -27,7 +26,7 @@ struct RegisterView: View {
     @State private var confirmPassword: String = ""
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack(spacing: 24) {
                 Text("Register")
                     .font(.largeTitle)
@@ -121,7 +120,6 @@ struct RegisterView: View {
     }
 }
             
-@available(iOS 15.0, *)
 #Preview {
     RegisterView()
 }
@@ -138,3 +136,25 @@ struct AuthenticationViews: View {
         Text("Temporaire AuthenticationViews")
     }
 }
+
+private func customCase(title:String, content:() -> some View) -> some View {
+    
+}
+
+struct CustomCase: some View {
+    
+    private let title: String
+    private let content: () -> some View
+    
+    var body: some View {
+        VStack(alignment: .leading,spacing: 6) {
+            Text(title)
+            .font(.headline})
+        
+        content()
+            .TextFieldStyle(RoundedBorderTextFieldStyle())
+            .overlay(RoundedRectangle(cornerRadius: PresentationConstants.Paddings.regular)
+                .stroke(Color.primary, linewidth: 0.5)
+                     )
+        }
+    }

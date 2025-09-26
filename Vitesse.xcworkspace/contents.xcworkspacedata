@@ -8,12 +8,6 @@
       location = "group:Candidats">
    </FileRef>
    <FileRef
-      location = "group:CandidatDetails">
-   </FileRef>
-   <FileRef
-      location = "group:Register">
-   </FileRef>
-   <FileRef
       location = "container:Authentication">
    </FileRef>
 </Workspace>

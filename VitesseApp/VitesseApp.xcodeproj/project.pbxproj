@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4812E2F32E78631C00737943 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4812E2F12E78631C00737943 /* ContentView.swift */; };
 		4812E2F42E78631C00737943 /* VitesseAppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4812E2F22E78631C00737943 /* VitesseAppMain.swift */; };
+		48F9C09E2E86B49A0074F9CE /* Authentication in Frameworks */ = {isa = PBXBuildFile; productRef = 48F9C09D2E86B49A0074F9CE /* Authentication */; };
+		48F9C0B72E86B9C00074F9CE /* Candidats in Frameworks */ = {isa = PBXBuildFile; productRef = 48F9C0B62E86B9C00074F9CE /* Candidats */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48F9C0B72E86B9C00074F9CE /* Candidats in Frameworks */,
+				48F9C09E2E86B49A0074F9CE /* Authentication in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +112,7 @@
 				4812E2C62E78626E00737943 /* Products */,
 				4812E2F12E78631C00737943 /* ContentView.swift */,
 				4812E2F22E78631C00737943 /* VitesseAppMain.swift */,
+				48F9C09C2E86B4840074F9CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +124,13 @@
 				4812E2DC2E78626F00737943 /* VitesseAppUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		48F9C09C2E86B4840074F9CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +153,8 @@
 			);
 			name = VitesseApp;
 			packageProductDependencies = (
+				48F9C09D2E86B49A0074F9CE /* Authentication */,
+				48F9C0B62E86B9C00074F9CE /* Candidats */,
 			);
 			productName = VitesseApp;
 			productReference = 4812E2C52E78626E00737943 /* VitesseApp.app */;
@@ -583,6 +597,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		48F9C09D2E86B49A0074F9CE /* Authentication */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Authentication;
+		};
+		48F9C0B62E86B9C00074F9CE /* Candidats */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Candidats;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4812E2BD2E78626E00737943 /* Project object */;
 }
